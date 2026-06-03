@@ -1,0 +1,17 @@
+@use '../styles/variables' as *;
+
+.footer {
+    background-color: $secondary-color;
+    font-family: $font-family;
+    color: $text-color;
+    padding: 2rem;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 0;
+
+    img {
+        width: 100px;
+        color: $secondary-color;
+        margin-bottom: 10px;
+    }
+}

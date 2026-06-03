@@ -1,0 +1,8 @@
+.main {
+    flex: 1;
+    padding: 2rem 3rem;
+
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+}

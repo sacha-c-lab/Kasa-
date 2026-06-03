@@ -1,0 +1,49 @@
+@use '../styles/variables' as *;
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.collapses {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .collapses {
+        width: 90%;
+    }
+
+    .about-content .banner {
+        height: 30vh;
+    }
+
+    .collapses .collapse__header {
+        min-height: 7vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        width: 90%;
+    }
+
+    .collapses {
+        width: 80%;
+    }
+
+    .about-content .banner {
+        height: 16vh;
+    }
+
+    .collapses .collapse__header {
+        min-height: 7vh;
+    }
+}

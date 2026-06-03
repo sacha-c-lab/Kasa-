@@ -1,0 +1,34 @@
+@use '../styles/variables' as *;
+
+.host {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &__name {
+        font-size: 1.5rem;
+        color: $primary-color;
+        font-weight: bold;
+    }
+
+    &__picture {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .host {
+        &__name {
+            font-size: 0.875rem;
+            text-align: right;
+        }
+
+        &__picture {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@use './variables' as *;
+
+// Reset CSS — supprime les marges/paddings par défaut des navigateurs
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+// min-height: 100vh garantit que le footer reste toujours en bas de page
+// même quand le contenu est court (ex: page 404)
+body {
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   font-family: $font-family;
+}
+
+// flex: 1 permet à #root de grandir et remplir tout l'espace disponible dans body
+#root {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+}
