@@ -15,7 +15,7 @@ const Logement = () => {
     const { id } = useParams()
     const logement = data.find((item) => item.id === id)
     if (!logement) {
-        return <Layout><Error /></Layout>
+        return <Error/>
     }
 
 
